@@ -2,7 +2,7 @@
     'use strict';
 
     // Create the module and define its dependencies.
-    var app = angular.module('app', [
+    var $itemname$ = angular.module('$itemname$', [
         // Angular modules 
         //'ngRoute'           // routing
     ]);
@@ -12,7 +12,7 @@
           $locationProvider.hashPrefix('!');
           /*$routeProvider.
             when('/', {
-                templateUrl:  'SurveyResults/SurveyResults'
+                templateUrl:  ''
             });*/
       }]);
 
