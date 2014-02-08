@@ -1,15 +1,16 @@
 (function() {
     'use strict';
 
-    angular.module('app').directive('', );
+    angular.module('app').directive('$itemname$', $itemname$);
     
-    function () {
+    function $itemname$() {
         var self = {};
 
-        self.restrict = 'A';
+        self.replace = true;
+        self.restrict = 'E';
         self.scope = {
         };
-
+        self.templateUrl = '';
         self.link = function (scope, element, attrs) {
 		}
 		

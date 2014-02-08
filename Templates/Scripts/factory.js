@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 	
-    angular.module('app').factory('Service', ['$location', Service]);
+    angular.module('app').factory('$itemname$', ['$location', $itemname$]);
 
-    function Service($location) {
+    function $itemname$($location) {
         var self = {};
 		
 
