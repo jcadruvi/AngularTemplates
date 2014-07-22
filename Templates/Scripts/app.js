@@ -4,22 +4,18 @@
     // Create the module and define its dependencies.
     var $itemname$ = angular.module('$itemname$', [
         // Angular modules 
-        //'ngRoute'           // routing
+        'ui.router',
+        'ngAnimate'
     ]);
 
-    app.config(['$locationProvider', '$routeProvider',
-      function ($locationProvider, $routeProvider) {
-          $locationProvider.hashPrefix('!');
-          /*$routeProvider.
-            when('/', {
-                templateUrl:  ''
-            });*/
-      }]);
+    app.config(function ($stateProvider, $urlRouterProvider) {
+        //$urlRouterProvider.otherwise("/jobs");
 
-    // Execute bootstrapping code and any dependencies.
-    app.run(['$q', '$rootScope',
-        function ($q, $rootScope) {
-
-        }]);
-
+        /*$stateProvider
+          .state('jobs', {
+              url: "/jobs",
+              templateUrl: "/Home/jobs.html",
+              controller: 'jobController'
+          });*/
+    });
 })();
